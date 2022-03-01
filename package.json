@@ -6,7 +6,9 @@
   "scripts": {
     "start": "cd server && npm start",
     "build": "cd server && npm install",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format:check": "prettier --check **/*.{js,jsx,ts,tsx}",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/ErlingMMM/forelesning5api/issues"
   },
-  "homepage": "https://github.com/ErlingMMM/forelesning5api#readme"
+  "homepage": "https://github.com/ErlingMMM/forelesning5api#readme",
+  "devDependencies": {
+    "husky": "^7.0.4"
+  }
 }
