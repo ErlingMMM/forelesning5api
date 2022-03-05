@@ -1,12 +1,12 @@
 {
-  "name": "forelesning5api",
+  "name": "pg6301-react-and-express-lectures",
   "version": "1.0.0",
-  "description": "",
+  "description": "Heroku",
   "main": "index.js",
   "scripts": {
     "start": "cd server && npm start",
     "build": "npm run build:client && npm run build:server",
-    "build:client": "cd server && npm install && npm run build",
+    "build:client": "cd client && npm install --include=dev && npm run build",
     "build:server": "cd server && npm install",
     "format": "prettier --write **/*.{js,jsx,ts,tsx}",
     "format:check": "prettier --check **/*.{js,jsx,ts,tsx}",
@@ -15,16 +15,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ErlingMMM/forelesning5api.git"
+    "url": "git+https://github.com/kristiania-pg6301-2022/pg6301-react-and-express-lectures.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ErlingMMM/forelesning5api/issues"
+    "url": "https://github.com/kristiania-pg6301-2022/pg6301-react-and-express-lectures/issues"
   },
-  "homepage": "https://github.com/ErlingMMM/forelesning5api#readme",
+  "homepage": "https://github.com/kristiania-pg6301-2022/pg6301-react-and-express-lectures#readme",
   "devDependencies": {
-    "husky": "^7.0.4"
+    "husky": "^7.0.4",
+    "prettier": "^2.5.1"
   }
 }
